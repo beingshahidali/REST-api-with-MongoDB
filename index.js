@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const app = express();
 const userRoute = require('./routes/users');
 const authRoute = require('./routes/auth');
-
+const postRoute = require('./routes/posts');
 
 
 
@@ -29,6 +29,7 @@ app.get('/users',(req,res)=>{
 })
 app.use('/api/users',userRoute);
 app.use('/api/auth',authRoute);
+app.use('/api/posts',postRoute);
 
 
 app.listen(8800,() => {
