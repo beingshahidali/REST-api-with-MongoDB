@@ -2,6 +2,7 @@ const router = require('express').Router();
 const User = require('../models/User');
 const bcrypt = require('bcrypt');
 
+
 //Register
 // router.get('/register',async(req,res) => {
 //    const user = await new User({
